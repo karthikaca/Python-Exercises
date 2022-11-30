@@ -1,0 +1,13 @@
+def reverseWordSentence(s):
+  reversedSentence =' '.join(i[::-1] for i in s.split(" "))
+  newSentence = ''
+  
+  for i in range(len(s)):
+    if s[i].isupper():
+      newSentence += reversedSentence[i].upper()
+    else:
+      newSentence += reversedSentence[i].lower()
+  return newSentence
+
+s = "Python is Awesome"
+print(reverseWordSentence(s)) 
