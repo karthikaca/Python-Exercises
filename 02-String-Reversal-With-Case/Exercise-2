@@ -1,4 +1,4 @@
-def reverseWordSentence(s):
+def reverseWordSentenceWithCase(s):
   reversedSentence =' '.join(i[::-1] for i in s.split(" "))
   newSentence = ''
   
@@ -10,4 +10,4 @@ def reverseWordSentence(s):
   return newSentence
 
 s = "Python is Awesome"
-print(reverseWordSentence(s)) 
+print(reverseWordSentenceWithCase(s)) 
